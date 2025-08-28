@@ -4,7 +4,7 @@ import '../models/newsListModel.dart';
 
 class NewsApiService {
   final Dio _dio = Dio();
-  final String apiKey = "2cb65261b4824c5ea12f327d313f46f8"; // your key
+  final String apiKey = "2cb65261b4824c5ea12f327d313f46f8";
   final String baseUrl = "https://newsapi.org/v2";
 
   Future<List<Article>> fetchArticles(String category, {int page = 1}) async {
@@ -14,8 +14,8 @@ class NewsApiService {
         queryParameters: {
           "country": "us",
           "category": category,
-          "page": page,
-          "pageSize": 30,
+          // "page": page,
+          // "pageSize": 30,
           "apiKey": apiKey,
         },
       );

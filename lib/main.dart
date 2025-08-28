@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(390, 844), // adjust to your Figma or base design
+      designSize: const Size(390, 844),
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (_, __) {
